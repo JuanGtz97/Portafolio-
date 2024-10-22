@@ -1,60 +1,993 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>JuanGtz</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  </head>
-  <body>
-    <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container">
-              <a class="navbar-brand" href="#">JuanGtz</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="./Pages/redes.html">Redes</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Dropdown
-                    </a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Action</a></li>
-                      <li><a class="dropdown-item" href="#">Another action</a></li>
-                      <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-                  </li>
-                </ul>
-                <form class="d-flex" role="search">
-                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                  <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
-              </div>
-            </div>
-          </nav>
-    </header>
-    <main>
-        <div class="section">
-            <div class="row">
-                <div class="col-lg-6 col-md-6 col-sm-12">
-                    <img src="./Img/Imagen de WhatsApp 2024-04-16 a las 11.47.08_777e916a.jpg" alt="">
-                </div>
-                <div class="col-lg-6 order-md-first col-sm-12"><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum quaerat eaque consectetur atque dignissimos corporis maxime, ducimus voluptates aut fugiat veniam asperiores minus. Error perspiciatis laboriosam est quibusdam odio autem.</p></div>
-            </div>
-        </div>
-    </main>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-  </body>
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<title>Estructura cable de Red</title>
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="css/styles.css" />
+	</head>
+	<body>
+		<div class="hero-image">
+			<div class="hero-text typewriter">
+				<h1 class="">Estructura de cable de Red.</h1>
+				<a href="#menu" class="btn btn-outline-primary"
+					>Iniciar</a
+				>
+			</div>
+		</div>
+		<div class="container mt-4" id="menu">
+			<ul
+				class="nav nav-pills mb-3"
+				id="pills-tab"
+				role="tablist"
+			>
+				<li class="nav-item" role="presentation">
+					<a
+						class="nav-link active"
+						id="pills-intro-tab"
+						data-bs-toggle="pill"
+						href="#pills-intro"
+						role="tab"
+						aria-controls="pills-intro"
+						aria-selected="true"
+						>Introducción</a
+					>
+				</li>
+				<li class="nav-item dropdown">
+					<a
+						class="nav-link dropdown-toggle"
+						data-bs-toggle="dropdown"
+						href="#"
+						role="button"
+						aria-expanded="false"
+						>Tipos de Cable</a
+					>
+					<ul class="dropdown-menu">
+						<li>
+							<a
+								class="dropdown-item"
+								id="pills-tipoA-tab"
+								data-bs-toggle="pill"
+								href="#pills-tipoA"
+								role="tab"
+								>Ethernet</a
+							>
+						</li>
+						<li>
+							<a
+								class="dropdown-item"
+								id="pills-tipoB-tab"
+								data-bs-toggle="pill"
+								href="#pills-tipoB"
+								role="tab"
+								>Coaxiales</a
+							>
+						</li>
+						<li>
+							<a
+								class="dropdown-item"
+								id="pills-tipoC-tab"
+								data-bs-toggle="pill"
+								href="#pills-tipoC"
+								role="tab"
+							>
+								Fibra Óptica</a
+							>
+						</li>
+					</ul>
+				</li>
+				<li class="nav-item" role="presentation">
+					<a
+						class="nav-link"
+						id="pills-entradas-tab"
+						data-bs-toggle="pill"
+						href="#pills-entradas"
+						role="tab"
+						aria-controls="pills-entradas"
+						aria-selected="false"
+						>Ejemplo de ponchado Ethernet</a
+					>
+				</li>
+			</ul>
+			<div class="tab-content p-3">
+				<div
+					class="tab-pane fade show active"
+					id="pills-intro"
+					role="tabpanel"
+					aria-labelledby="pills-intro-tab"
+				>
+					<h2>Introducción</h2>
+					<p>
+						El cableado de red constituye la columna
+						vertebral de la infraestructura de
+						comunicación moderna, permitiendo la
+						conexión y el intercambio de datos entre
+						dispositivos como computadoras,
+						servidores, impresoras y otros equipos
+						tecnológicos. Este sistema de cables es
+						fundamental para el funcionamiento de
+						redes locales (LAN) en hogares y empresas,
+						así como para la transmisión de datos a
+						larga distancia en redes de área amplia
+						(WAN).
+					</p>
+					<br />
+					<p>
+						Existen varios tipos de cables utilizados
+						en el cableado de red, cada uno diseñado
+						para cumplir con necesidades específicas
+						de rendimiento y aplicación.
+					</p>
+					<br />
+					<p>
+						Sin estos sistemas de cableado, la
+						infraestructura de Internet y las
+						comunicaciones modernas que sustentan el
+						funcionamiento de empresas, servicios
+						públicos y el acceso a la información en
+						tiempo real no serían viables. El
+						desarrollo y la implementación de
+						tecnologías de cableado de red continúan
+						evolucionando, impulsando la innovación en
+						la forma en que nos conectamos y
+						comunicamos en la era digital.
+					</p>
+				</div>
+				<div
+					class="tab-pane fade"
+					id="pills-tipoA"
+					role="tabpanel"
+					aria-labelledby="pills-tipoA-tab"
+				>
+					<h2>Ethernet</h2>
+					<p>
+						Los cables Ethernet son un tipo de cable
+						de red utilizado para establecer
+						conexiones de datos entre dispositivos en
+						una red de área local (LAN). Son
+						esenciales para la comunicación de datos
+						en entornos domésticos y empresariales, ya
+						que permiten la conexión de computadoras,
+						impresoras, routers, switches y otros
+						dispositivos.
+					</p>
+					<br />
+					<h3>Categorias de Ethernet</h3>
+					<table class="table mt-4">
+						<thead class="thead-dark">
+							<tr>
+								<th>Categoría</th>
+								<th>Velocidad</th>
+								<th>Frecuencia</th>
+								<th>Uso</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Cat5</td>
+								<td>Hasta 100 Mbps</td>
+								<td>100 MHz</td>
+								<td>
+									Conexiones básicas de red, ideal
+									para aplicaciones de Internet de
+									baja demanda. Se utiliza menos
+									hoy en día debido a su capacidad
+									limitada.
+								</td>
+							</tr>
+							<tr>
+								<td>Cat5e</td>
+								<td>Hasta 1 Gbps (Gigabit)</td>
+								<td>100 MHz</td>
+								<td>
+									Mejorado respecto a Cat5, con
+									menos interferencias y mayor
+									rendimiento. Es común en redes
+									domésticas y pequeñas oficinas.
+								</td>
+							</tr>
+							<tr>
+								<td>Cat6</td>
+								<td>
+									Hasta 10 Gbps a distancias de
+									hasta 55 metros
+								</td>
+								<td>250 MHz</td>
+								<td>
+									Recomendado para aplicaciones que
+									requieren mayor ancho de banda y
+									menor diafonía. Es ideal para
+									entornos donde se manejan grandes
+									cantidades de datos.
+								</td>
+							</tr>
+							<tr>
+								<td>Cat6a</td>
+								<td>
+									Hasta 10 Gbps a distancias de
+									hasta 100 metros
+								</td>
+								<td>500 MHz</td>
+								<td>
+									Proporciona un rendimiento
+									superior y es menos susceptible a
+									interferencias. Es utilizado en
+									redes de alto rendimiento.
+								</td>
+							</tr>
+							<tr>
+								<td>Cat7</td>
+								<td>
+									Hasta 10 Gbps a distancias de
+									hasta 100 metros
+								</td>
+								<td>600 MHz</td>
+								<td>
+									Tiene un blindaje adicional para
+									reducir la interferencia. Aunque
+									es menos común en el uso
+									doméstico, se encuentra en
+									aplicaciones comerciales y de
+									centros de datos.
+								</td>
+							</tr>
+							<tr>
+								<td>Cat8</td>
+								<td>Hasta 25-40 Gbps</td>
+								<td>2000 MHz</td>
+								<td>
+									Diseñado para aplicaciones de
+									centros de datos, donde se
+									requiere un alto rendimiento y
+									velocidad en cortas distancias.
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<br />
+					<h3>Estructura de un Cable Ethernet</h3>
+					<p>
+						Los cables Ethernet generalmente tienen
+						cuatro pares de hilos trenzados (ocho
+						hilos en total). La trenzado de los hilos
+						ayuda a minimizar la interferencia
+						electromagnética (EMI) y la diafonía entre
+						los pares. Los pares de hilos están
+						codificados por colores, facilitando la
+						conexión correcta en ambos extremos del
+						cable.
+					</p>
+					<br />
+					<h3>Conectores</h3>
+					<p>
+						Los cables Ethernet utilizan conectores
+						RJ-45, que son enchufes de ocho pines que
+						permiten la conexión a dispositivos de red
+						como routers y switches.
+					</p>
+					<br />
+					<h3>Usos Comunes</h3>
+					<ul>
+						<li>
+							Redes Domésticas: Para conectar
+							computadoras, consolas de videojuegos y
+							dispositivos de streaming a routers o
+							switches.
+						</li>
+						<li>
+							Redes Empresariales: Para conexiones
+							entre servidores, estaciones de trabajo
+							y otros dispositivos en oficinas.
+						</li>
+						<li>
+							Centros de Datos: Para conexiones de
+							alta velocidad entre servidores y
+							equipos de red.
+						</li>
+					</ul>
+					<br />
+					<h3>Ventajas y desventajas</h3>
+					<h4>Ventajas</h4>
+					<ul>
+						<li>
+							Estabilidad y Fiabilidad: Proporcionan
+							conexiones más estables en comparación
+							con conexiones inalámbricas.
+						</li>
+						<li>
+							Mayor Velocidad: Ofrecen velocidades de
+							transmisión que pueden ser superiores a
+							las de Wi-Fi, especialmente en
+							aplicaciones que requieren gran ancho
+							de banda.
+						</li>
+						<li>
+							Baja Latencia: Ideal para juegos en
+							línea y aplicaciones críticas que
+							requieren tiempos de respuesta rápidos.
+						</li>
+						<li>
+							Seguridad: Las conexiones cableadas son
+							generalmente más seguras que las
+							conexiones inalámbricas, ya que es más
+							difícil interceptar la señal.
+						</li>
+					</ul>
+					<h4>Desventajas</h4>
+					<ul>
+						<li>
+							Movilidad: A diferencia del Wi-Fi, los
+							dispositivos conectados por cable están
+							limitados por la longitud del cable.
+						</li>
+						<li>
+							Instalación: Puede requerir una
+							instalación más laboriosa y costosa en
+							comparación con la configuración de
+							redes inalámbricas.
+						</li>
+					</ul>
+					<h3>Tipos de Apantallamientos</h3>
+					<ul>
+						<li>
+							UTP (Unshielded Twisted Pair – Par
+							trenzado no apantallado): Es un cable
+							sin apantallamiento. Es el menos
+							indicado para ser utilizado en
+							instalaciones que van por dentro de la
+							pared y requieren de cables
+							especialmente largos.
+						</li>
+						<li>
+							FTP (Foiled Twisted Pair- Par trenzado
+							con pantalla global): Es un tipo de
+							cable parecido al UTP, donde los pares
+							de cables trenzados no están
+							apantallados. Sin embargo, sí tienen
+							una pantalla global, una especie de
+							protección que envuelve todos a la vez
+							para darles un poco de protección ante
+							interferencias externas.
+						</li>
+						<li>
+							STP (Shielded Twisted Pair- Par
+							trenzado apantallado): Su protección es
+							mayor que la de los dos tipos
+							anteriores, y los convierten en cables
+							mejor preparados para las instalaciones
+							eléctricas que van por dentro de la
+							pared.
+						</li>
+					</ul>
+					<img
+						src="assets/apantallamientos.png"
+						alt=""
+					/>
+					<h3>Normas de cableado estructurado.</h3>
+					<table class="table mt-4">
+						<thead class="thead-dark">
+							<tr>
+								<th>Norma</th>
+								<th>Descripción</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>ANSI/TIA/EIA-568-B</td>
+								<td>
+									Cableado de Telecomunicaciones en
+									Edificios Comerciales:
+									<ul>
+										<li>
+											TIA/EIA 568-B1:
+											Requerimientos generales
+											para instalación de
+											cableado.
+										</li>
+										<li>
+											TIA/EIA 568-B2: Componentes
+											de cableado mediante par
+											trenzado balanceado.
+										</li>
+										<li>
+											TIA/EIA 568-B3: Componentes
+											de cableado de fibra
+											óptica.
+										</li>
+									</ul>
+								</td>
+							</tr>
+							<tr>
+								<td>ANSI/TIA/EIA-569-A</td>
+								<td>
+									Normas de Recorridos y Espacios
+									de Telecomunicaciones en
+									Edificios Comerciales sobre cómo
+									enrutar el cableado.
+								</td>
+							</tr>
+							<tr>
+								<td>ANSI/TIA/EIA-570-A</td>
+								<td>
+									Normas de Infraestructura
+									Residencial de
+									Telecomunicaciones.
+								</td>
+							</tr>
+							<tr>
+								<td>ANSI/TIA/EIA-606-A</td>
+								<td>
+									Normas de Administración de
+									Infraestructura de
+									Telecomunicaciones en Edificios
+									Comerciales.
+								</td>
+							</tr>
+							<tr>
+								<td>ANSI/TIA/EIA-607</td>
+								<td>
+									Requerimientos para instalaciones
+									de sistemas de puesta a tierra de
+									Telecomunicaciones en Edificios
+									Comerciales.
+								</td>
+							</tr>
+						</tbody>
+					</table>
+
+					<img
+						class="img-cables"
+						src="assets/ethernet.jpg"
+						alt="img-ethernet"
+					/>
+				</div>
+				
+				<div
+					class="tab-pane fade"
+					id="pills-tipoB"
+					role="tabpanel"
+					aria-labelledby="pills-tipoB-tab"
+				>
+					<h2>Coaxiales</h2>
+					<p>
+						Los cables coaxiales son un tipo de cable
+						que consiste en un conductor central
+						rodeado por un aislamiento, una malla
+						metálica y una cubierta exterior. Son
+						ampliamente utilizados para la transmisión
+						de señales de televisión, internet y datos
+						en entornos domésticos y comerciales.
+					</p>
+					<br />
+					<h3>Categorías de Cables Coaxiales</h3>
+					<table class="table mt-4">
+						<thead class="thead-dark">
+							<tr>
+								<th>Tipo</th>
+								<th>Uso Común</th>
+								<th>Impedancia</th>
+								<th>Aplicaciones</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>RG-6</td>
+								<td>
+									Televisión por cable y satélite
+								</td>
+								<td>75 ohmios</td>
+								<td>
+									Ideal para la transmisión de
+									señales de televisión de alta
+									definición y datos de internet.
+								</td>
+							</tr>
+							<tr>
+								<td>RG-59</td>
+								<td>Video de seguridad</td>
+								<td>75 ohmios</td>
+								<td>
+									Comúnmente utilizado para
+									aplicaciones de video en circuito
+									cerrado (CCTV).
+								</td>
+							</tr>
+							<tr>
+								<td>RG-11</td>
+								<td>
+									Transmisiones de larga distancia
+								</td>
+								<td>75 ohmios</td>
+								<td>
+									Recomendado para aplicaciones que
+									requieren una menor pérdida de
+									señal a lo largo de distancias
+									largas.
+								</td>
+							</tr>
+							<tr>
+								<td>RG-58</td>
+								<td>Redes de área local</td>
+								<td>50 ohmios</td>
+								<td>
+									Usado principalmente en
+									aplicaciones de radiofrecuencia y
+									redes de comunicación.
+								</td>
+							</tr>
+							<tr>
+								<td>RG-174</td>
+								<td>
+									Aplicaciones de alta frecuencia
+								</td>
+								<td>50 ohmios</td>
+								<td>
+									Comúnmente utilizado en
+									dispositivos portátiles y
+									aplicaciones móviles.
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<br />
+					<h3>Estructura de un Cable Coaxial</h3>
+					<p>
+						Un cable coaxial está compuesto por varios
+						componentes: un conductor central que
+						transmite la señal, un aislamiento que lo
+						separa de la malla metálica, que actúa
+						como un escudo contra interferencias
+						externas, y una cubierta exterior que
+						protege el cable de daños físicos.
+					</p>
+					<br />
+					<h3>Conectores</h3>
+					<p>
+						Los cables coaxiales utilizan conectores
+						como BNC, F y RCA, que permiten la
+						conexión a dispositivos de televisión,
+						cámaras de seguridad y otros equipos de
+						red.
+					</p>
+					<br />
+					<h3>Usos Comunes</h3>
+					<ul>
+						<li>
+							Televisión: Para la transmisión de
+							señales de televisión por cable y
+							satélite.
+						</li>
+						<li>
+							Internet: Utilizados en conexiones de
+							internet de banda ancha.
+						</li>
+						<li>
+							Video vigilancia: Comúnmente empleados
+							en sistemas de CCTV.
+						</li>
+					</ul>
+					<br />
+					<h3>Ventajas y Desventajas</h3>
+					<h4>Ventajas</h4>
+					<ul>
+						<li>
+							Alta inmunidad a interferencias:
+							Proporcionan una transmisión de señal
+							clara y estable.
+						</li>
+						<li>
+							Capacidad para cubrir distancias
+							largas: Adecuados para aplicaciones que
+							requieren conexiones a largas
+							distancias.
+						</li>
+						<li>
+							Versatilidad: Usados en una variedad de
+							aplicaciones, desde televisión hasta
+							redes.
+						</li>
+					</ul>
+					<h4>Desventajas</h4>
+					<ul>
+						<li>
+							Rigidez: Son menos flexibles que otros
+							tipos de cables, lo que puede
+							dificultar su instalación.
+						</li>
+						<li>
+							Costos: En algunas aplicaciones, pueden
+							ser más costosos que soluciones
+							inalámbricas.
+						</li>
+					</ul>
+
+					<img
+						src="assets/coaxial.jpg"
+						alt="img-coaxial"
+						class="img-cables"
+					/>
+				</div>
+				
+				<div
+					class="tab-pane fade"
+					id="pills-tipoC"
+					role="tabpanel"
+					aria-labelledby="pills-tipoC-tab"
+				>
+					<h2>Fibra Óptica</h2>
+					<p>
+						Los cables de fibra óptica son un tipo de
+						cable que utiliza filamentos de vidrio o
+						plástico para transmitir datos en forma de
+						luz. Son altamente eficientes para la
+						transmisión de grandes cantidades de
+						información a largas distancias, siendo
+						fundamentales en redes de
+						telecomunicaciones y sistemas de internet
+						de alta velocidad.
+					</p>
+					<br />
+					<h3>Tipos de Fibra Óptica</h3>
+					<table class="table mt-4">
+						<thead class="thead-dark">
+							<tr>
+								<th>Tipo de Fibra</th>
+								<th>Modo</th>
+								<th>Diámetro del Núcleo</th>
+								<th>Aplicaciones</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Fibra Monomodo</td>
+								<td>Monomodo</td>
+								<td>8-10 micrómetros</td>
+								<td>
+									Ideal para largas distancias,
+									como conexiones de
+									telecomunicaciones y redes de
+									área amplia (WAN).
+								</td>
+							</tr>
+							<tr>
+								<td>Fibra Multimodo</td>
+								<td>Multimodo</td>
+								<td>50-62.5 micrómetros</td>
+								<td>
+									Usada para distancias más cortas,
+									como en redes de área local (LAN)
+									y aplicaciones de
+									telecomunicaciones dentro de
+									edificios.
+								</td>
+							</tr>
+							<tr>
+								<td>Fibra de Plástico</td>
+								<td>Multimodo</td>
+								<td>1 mm o más</td>
+								<td>
+									Comúnmente utilizada en
+									aplicaciones de corta distancia,
+									como conexiones de audio y video.
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<br />
+					<h3>
+						Estructura de un Cable de Fibra Óptica
+					</h3>
+					<p>
+						Un cable de fibra óptica consta de un
+						núcleo que transporta la luz, rodeado por
+						un material de recubrimiento que refleja
+						la luz de vuelta al núcleo. Esto permite
+						que la señal viaje a lo largo del cable
+						sin perder calidad. La fibra se encuentra
+						envuelta en una cubierta protectora que
+						protege contra daños físicos.
+					</p>
+					<br />
+					<h3>Conectores</h3>
+					<p>
+						Los cables de fibra óptica utilizan
+						conectores como SC, LC, ST y MTP/MPO, que
+						permiten la conexión a dispositivos de
+						red, como switches y routers, así como la
+						interconexión de diferentes cables de
+						fibra.
+					</p>
+					<br />
+					<h3>Usos Comunes</h3>
+					<ul>
+						<li>
+							Telecomunicaciones: Para transmitir
+							señales de voz y datos a largas
+							distancias.
+						</li>
+						<li>
+							Internet: Utilizados en conexiones de
+							alta velocidad para proveedores de
+							servicios de internet.
+						</li>
+						<li>
+							Redes Empresariales: Comúnmente
+							empleados en redes de área local para
+							conectar servidores y estaciones de
+							trabajo.
+						</li>
+						<li>
+							Aplicaciones Médicas: En equipos de
+							endoscopia y otros dispositivos
+							médicos.
+						</li>
+					</ul>
+					<br />
+					<h3>Ventajas y Desventajas</h3>
+					<h4>Ventajas</h4>
+					<ul>
+						<li>
+							Alta capacidad de transmisión: Permiten
+							la transferencia de grandes volúmenes
+							de datos a altas velocidades.
+						</li>
+						<li>
+							Menor pérdida de señal: Ideal para
+							distancias largas, ya que la señal se
+							degrada mucho menos en comparación con
+							los cables de cobre.
+						</li>
+						<li>
+							Inmunidad a interferencias: No son
+							susceptibles a interferencias
+							electromagnéticas, lo que garantiza una
+							señal clara.
+						</li>
+						<li>
+							Seguridad: Más difíciles de interceptar
+							que las señales eléctricas, lo que las
+							hace más seguras.
+						</li>
+					</ul>
+					<h4>Desventajas</h4>
+					<ul>
+						<li>
+							Costo: Pueden ser más costosos de
+							instalar y mantener que otros tipos de
+							cables.
+						</li>
+						<li>
+							Fragilidad: Son más susceptibles a
+							daños físicos, especialmente si no se
+							manejan con cuidado.
+						</li>
+						<li>
+							Instalación: La instalación puede
+							requerir personal especializado y
+							técnicas precisas.
+						</li>
+					</ul>
+					<img
+						src="assets/fibra-optica-img01.jpg"
+						alt="img-fibra-optica"
+						class="img-cables"
+					/>
+				</div>
+				
+				<div
+					class="tab-pane fade"
+					id="pills-entradas"
+					role="tabpanel"
+					aria-labelledby="pills-entradas-tab"
+				>
+					<h2>Ejemplo de ponchado</h2>
+					<br />
+					<h3>
+						Cable estructurado con ponchado según
+						norma TIA/EIA-568A o tipo A
+					</h3>
+					<img
+						src="assets/ponchado-1.png"
+						alt="ponchado-1"
+					/>
+					<br />
+					<h4>Materiales</h4>
+					<ul>
+						<li>
+							Alicate Cortador de cable o pela
+							cables.
+						</li>
+						<li>
+							Cable UTP. (En este caso se utilizará
+							cable categoría 6)
+						</li>
+						<li>Conectores RJ-45. </li>
+						<li>
+							Pinza Ponchadora para cable UTP de 4
+							pares.
+						</li>
+						<li>
+							Probador de cables de red: Pruebas para
+							RJ45-EIA, 568A/568B (AT&T 258A) 10
+							Base-T o probador de pares de
+							transmisión. 
+						</li>
+					</ul>
+
+					<div class="container mt-5">
+						<h5>Procedimiento</h5>
+						<div
+							id="procedureCarousel"
+							class="carousel slide"
+							data-ride="carousel"
+						>
+							<div class="carousel-inner">
+								<div class="carousel-item active">
+									<h6>Paso 1</h6>
+									<p>
+										Realizar un corte a la
+										cubierta exterior de
+										aproximado de 3 cm. a un
+										extremo del cable UTP, según
+										la disponibilidad, dejando a
+										la vista los cuatro pares de
+										cable trenzados, eliminar el
+										exceso de alambre guía que
+										traen dentro los cables de
+										red.
+									</p>
+									<img
+										class="img-ponchado"
+										src="assets/ponchado-2.png"
+										alt="p-2"
+									/>
+								</div>
+								<div class="carousel-item">
+									<h6>Paso 2</h6>
+									<p>
+										Desenrollar cada uno de los
+										pares trenzados y organizar en
+										orden los hilos de colores de
+										acuerdo al tipo de estándar
+										que se va a realizar según la
+										norma tipo 568A que se va a
+										utilizar.
+									</p>
+									<img
+										class="img-ponchado"
+										src="assets/ponchado-3.png"
+										alt="p-3"
+									/>
+								</div>
+								<div class="carousel-item">
+									<h6>Paso 3</h6>
+									<p>
+										En el conector Jack RJ-45,
+										verificar las guías para
+										insertar la punta del cable de
+										red que está preparado según
+										los colores y la topología a
+										utilizar, insertar el cable
+										dentro del conector, tener en
+										cuenta que el cable no tenga
+										excesos de hilos.
+									</p>
+									<img
+										class="img-ponchado"
+										src="assets/ponchado-4.png"
+										alt="p-4"
+									/>
+								</div>
+								<div class="carousel-item">
+									<h6>Paso 4</h6>
+									<p>
+										Insertar el conector en la
+										pinza ponchadora Nexxt RJ-45
+										Crimping, de cable UTP de 4
+										pares y realizar presión en la
+										manija para empalmar el
+										conector en el cable de red.
+									</p>
+									<img
+										class="img-ponchado"
+										src="assets/ponchado-5.png"
+										alt="p-5"
+									/>
+								</div>
+								<div class="carousel-item">
+									<h6>Paso 5</h6>
+									<p>
+										Realizar los pasos 1 - 2 - 3 -
+										4 en el otro extremo del cable
+										de red, para culminar el
+										ponchado.
+									</p>
+									<img
+										class="img-ponchado"
+										src="assets/ponchado-6.png"
+										alt="p-6"
+									/>
+								</div>
+								<div class="carousel-item">
+									<h6>Paso 6</h6>
+									<p>
+										Realizar pruebas de
+										conectividad con un probador
+										para cable de red o tester de
+										pares UTP y asegurar que el
+										cable quedó bien ponchado y no
+										tenga pérdidas de transmisión
+										de datos.
+									</p>
+									<img
+										class="img-ponchado"
+										src="assets/ponchado-7.png"
+										alt="p-7"
+									/>
+								</div>
+							</div>
+							<div class="carousel-controls">
+								<a
+									class="carousel-control-prev"
+									href="#procedureCarousel"
+									role="button"
+									data-slide="prev"
+								>
+									<span
+										class="carousel-control-prev-icon"
+										aria-hidden="true"
+									></span>
+									
+								</a>
+								<a
+									class="carousel-control-next"
+									href="#procedureCarousel"
+									role="button"
+									data-slide="next"
+								>
+									<span
+										class="carousel-control-next-icon"
+										aria-hidden="true"
+									></span>
+									
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container mt-5">
+			<div class="row" id="card-container"></div>
+		</div>
+		
+		<a href="#" class="btn-float" id="btn-up">
+			<svg
+				xmlns="http://www.w3.org/2000/svg"
+				width="16"
+				height="16"
+				fill="white"
+				class="bi bi-arrow-up"
+				viewBox="0 0 16 16"
+			>
+				<path
+					fill-rule="evenodd"
+					d="M8 12a.5.5 0 0 0 .5-.5V4.707l3.147 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 0 0 .708.708L7.5 4.707V11.5a.5.5 0 0 0 .5.5z"
+				/>
+			</svg>
+		</a>
+		
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+		
+		<script src="js/script.js"></script>
+	</body>
 </html>
