@@ -1,4 +1,4 @@
-// Mostrar el botón cuando el usuario hace scroll hacia abajo
+
 window.onscroll = function () {
 	const btnUp = document.getElementById('btn-up');
 	if (
@@ -32,8 +32,7 @@ const personas = [
 	{
 		nombre: 'Leopoldo Romero',
 		matricula: 224303028,
-		rutaFoto:
-			'https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSSq7D4FMzD6So4l5nc5T6DFFdVeLzo0E9-y7nzl_ZVggmdXRIQ',
+		rutaFoto: 'assets/polo-profile.jpg',
 	},
 	{
 		nombre: 'Janette Martinez',
